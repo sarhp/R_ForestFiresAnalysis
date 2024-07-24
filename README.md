@@ -150,7 +150,7 @@ df_occurence_month %>%
 ```
 ![image](https://github.com/user-attachments/assets/36cf05a3-5c99-4d91-a16e-c01cdf726d7b)
 
-<br><br>
+<br>
 
 ```{r}
 # Fire occurrence by day 
@@ -171,13 +171,13 @@ df_occurrence_day %>%
 
 ![image](https://github.com/user-attachments/assets/7e6aa488-0b87-416e-b052-e069a439f577)
 
-<br><br>
-
 **Observations:**
 
 -   August and September see more forest fires than other months.
 
 -   Weekend have more fires (Friday, Saturday, and Sunday).
+
+<br><br>
 
 ```{r}
 # Further analysis: Total number of fires for each combination of 'month_reordered' and 'day_reordered'
@@ -247,8 +247,8 @@ df_pivoted%>%
 
 -   The outliers in the plots represent fires that caused inordinate
     amounts of damage compared to the other fires.
-    
-<br>
+
+<br><br>
 
 **Outliers:**
 
@@ -287,7 +287,7 @@ summary_table
 -   We increased the upper quartile to 90%. Likewise,
     `upper_quartile_90` is still less affected by the outlier.
 
-<br>
+<br><br>
 
 **Visualise relationships between variables, we filtered \`area' values except for rows with very high values of area:**
 
