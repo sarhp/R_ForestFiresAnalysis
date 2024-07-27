@@ -1,14 +1,27 @@
 
-**Title: "Forest Fire Analysis"**
+# Forest Fire Analysis
 
-Date: "2023 December"
+2023 December
+
+
+<br><br>
+
+**Project Objective:** To analyse fire occurrence data to uncover patterns and relationships between various factors such as month, area, rain, fire severity, and so on.
 
 <br>
 
-**Project Objective:**
+**Techniques used:**
 
-We will not use any type of modeling on this project, but rather we'll
-focus on visualising it.
+    Data Preprocessing:
+        -	Arrange values (e.g., month and date) in the correct order for intuitive analysis.
+        -	Pivot the data into a longer format to make it easier to plot (for scatter plots).
+        
+    Data Visualisation using ggplot:
+        - 	Create a histogram to understand the pattern of fire occurrences by month.
+        -	Use a scatter plot to find relationships between the variable 'month' and other variables (area, rain, etc.) and fire severity.
+        -	Identify outliers through summary statistics from the scatter plot.
+        -	Remove outliers to better visualize relationships between variables.
+
 
 ---
 
@@ -43,7 +56,7 @@ focus on visualising it.
 
 <br>
 
-**Key insights from the columns:**
+**Note:**
 
 -   A single row corresponds to the location of a fire and some
     characteristics about the fire itself.
@@ -128,9 +141,7 @@ df %>% pull(day_reordered) %>% unique
 
 **When do most forest fires occur?:**
 
-To manage the forest fires, we must understand the pattern forest fires.
-To do so, we will find more about the frequency of fire occurrence by
-month and day, respectively.
+To manage the forest fires, we must understand the pattern forest fires. Let's find more about the frequency of fire occurrence by month and day, respectively.
 
 ```{r}
 # Fire occurrence by month
@@ -289,7 +300,7 @@ summary_table
 
 <br><br>
 
-**Visualise relationships between variables, we filtered \`area' values except for rows with very high values of area:**
+**To better visualise relationships between variables, we filtered \`area' values except for rows with very high values of area:**
 
 ```{r}
 ### answer from solutions - which I still have no idea of
