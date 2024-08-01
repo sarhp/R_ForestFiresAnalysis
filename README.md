@@ -3,31 +3,17 @@
 
 2023 December
 
-
-<br><br>
+<br>
 
 **Project Objective:** To analyse fire occurrence data to uncover patterns and relationships between various factors such as month, area, rain, fire severity, and so on.
 
 <br>
 
-**Techniques used:**
+<details>
 
-    Data Preprocessing:
-        -	Arrange values (e.g., month and date) in the correct order for intuitive analysis.
-        -	Pivot the data into a longer format to make it easier to plot (for scatter plots).
-        
-    Data Visualisation using ggplot:
-        - 	Create a histogram to understand the pattern of fire occurrences by month.
-        -	Use a scatter plot to find relationships between the variable 'month' and other variables (area, rain, etc.) and fire severity.
-        -	Identify outliers through summary statistics from the scatter plot.
-        -	Remove outliers to better visualize relationships between variables.
-
-
----
+**<summary>About the dataset:</summary>**
 
 <br>
-
-**About the dataset:**
 
 `X` : X-axis spatial coordinate within the Montesinho park map: 1 to 9
 
@@ -53,6 +39,34 @@
 `rain` : Outside rain in mm/m2 : 0.0 to 6.4
 
 `area` : The burned area of the forest (in ha): 0.00 to 1090.84
+    
+<br>
+
+</details>
+
+
+
+<details>
+
+**<summary>Data Preprocessing Tequniques:</summary>**
+
+<br>
+
+🔸Arranging values (e.g., month and date) in the correct order for intuitive analysis.
+
+🔸Pivoting the data into a longer format to make it easier to plot (for scatter plots).
+
+🔸Creating a histogram to understand the pattern of fire occurrences by month.
+
+🔸Using scatter plots to find relationships between the variable 'month' and other variables (area, rain, etc.) and fire severity.
+
+🔸Identifying outliers through summary statistics / plots.
+
+🔸Removing outliers to better visualize relationships between variables.
+
+<br>
+
+</details>
 
 <br>
 
@@ -64,7 +78,7 @@
 -   Higher water presence is typically associated with less fire spread,
     therefore we can expect the water-related variables (`DMC` and
     `rain`) are associated with `area`.
-    
+
 ---
 
 <br>
